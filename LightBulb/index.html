@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb</title>
+    <link rel="stylesheet" href="light.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .btn_container{
+            margin-top: 50px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .bulb_btn{
+            font-family: 'Baloo Bhai 2', cursive;
+            width: 150px;
+            height: 50px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: #34dab4;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img src="pic_bulboff.gif" alt="">
+     <div class="btn_container">
+        <button id="on" class="bulb_btn" onclick="bulb_on()"> ON</button>
+        <button id="off" class="bulb_btn" onclick="bulb_off()">OFF</button>
+    </div>
+    <script>
+        const bulb_on = ()=>{
+            document.querySelector("img").src = "pic_bulbon.gif";
+        };
+
+        const bulb_off = ()=>{
+            document.querySelector("img").src = "pic_bulboff.gif";
+
+        }
+    </script>
+</body>
+</html>
